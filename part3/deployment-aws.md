@@ -3,3 +3,5 @@
 ## Step 2: Installing Caddy on the Cloud Instance
 ## Step 3: Domain Name and HTTPS Setup
 ## Step 4: Deploying the Portfolio Website
+
+[Previous](part2/installing-caddy.md) | [Back to Home](../README.md)
