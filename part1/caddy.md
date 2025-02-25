@@ -111,4 +111,4 @@ Caddy is an excellent choice for developers and organizations looking for a mode
 
 [6] “TechEmpower Framework Benchmarks.” https://www.techempower.com/benchmarks/ 
 
-[Next](part2/installing-caddy.md) | [Back to Home](../README.md)
+[Next](../part2/installing-caddy.md) | [Back to Home](../README.md)
