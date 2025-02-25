@@ -46,3 +46,53 @@ Caddy is designed to be simple, secure, and efficient, with a focus on ease of u
 - **Caddy**: Simple installation process with a single binary. Configuration is done using a user-friendly Caddyfile.
 - **Apache**: Installation can be more complex, with multiple configuration files and modules to manage.
 - **Nginx**: Installation is relatively straightforward, but configuration can be complex due to its powerful and flexible options.
+
+### Performance Benchmarks
+| Feature               | Caddy                          | Apache                        | Nginx                         |
+|-----------------------|--------------------------------|-------------------------------|-------------------------------|
+| **Concurrency**       | Good                          | Moderate                      | Excellent                     |
+| **Memory Usage**      | Low                           | High                          | Low                           |
+| **Latency**           | Low                           | Moderate                      | Low                           |
+- **Caddy**: Known for its efficient performance, especially with HTTPS due to its built-in TLS support.
+- **Apache**: Performance can vary based on configuration and modules used. Generally, it is less performant than Nginx and Caddy for static content.
+- **Nginx**: High-performance web server, particularly for serving static content and handling a large number of concurrent connections.
+
+### Features: Security, Scalability, Extensibility
+| Feature               | Caddy                          | Apache                        | Nginx                         |
+|-----------------------|--------------------------------|-------------------------------|-------------------------------|
+| **Security**          | Automatic HTTPS, modern crypto | Manual HTTPS setup            | Manual HTTPS setup            |
+| **Scalability**       | Good for small to medium sites | Highly scalable with modules  | Highly scalable               |
+| **Extensibility**     | Plugin-based                   | Module-based                  | Module-based                  |
+- **Caddy**: Strong security features with automatic HTTPS, scalable with its lightweight architecture, and extensible through plugins.
+- **Apache**: Highly extensible with a wide range of modules, good security features, and scalable with proper configuration.
+- **Nginx**: Excellent scalability and performance, strong security features, and extensible through modules.
+
+### Use Cases
+- **Caddy**: Ideal for developers and small to medium-sized websites that prioritize ease of use, security, and performance.
+- **Apache**: Ideal for complex setups requiring extensive customization and compatibility with a wide range of modules and configurations.
+- **Nginx**: Ideal for high-traffic websites, reverse proxy setups, and load balancing due to its performance and scalability.
+
+---
+
+# Challenges and Limitations
+## Challenges or Limitations of Caddy Compared to Apache and Nginx
+1. **Maturity**:  
+   Caddy is relatively new compared to Apache and Nginx, which have been around for decades. This means a smaller community, fewer resources and plugins, and potential issues with edge cases. Compared to Apache and Nginx, which have exisited for decades.
+
+2. **Performance**:  
+   While Caddy performs well, it may not match Nginx's performance in extremely high-concurrency scenarios.
+
+3. **Complex Configurations**:  
+   For highly complex setups, Caddy's simplicity can become a limitation. Apache and Nginx offer more granular control.
+
+4. **Community Support**:  
+   Apache and Nginx have larger communities and more third-party integrations, making it easier to find solutions to problems.
+
+5. **Resource Usage**:  
+   Caddy's automatic HTTPS and plugin system can consume more resources compared to Nginx in some cases.
+
+---
+
+## Conclusion
+
+Caddy is an excellent choice for developers and organizations looking for a modern, easy-to-use web server with built-in HTTPS and strong performance. However, for highly complex or high-traffic environments, Apache and Nginx may still be more suitable due to their maturity and extensive feature sets.
