@@ -96,3 +96,18 @@ Caddy is designed to be simple, secure, and efficient, with a focus on ease of u
 ## Conclusion
 
 Caddy is an excellent choice for developers and organizations looking for a modern, easy-to-use web server with built-in HTTPS and strong performance. However, for highly complex or high-traffic environments, Apache and Nginx may still be more suitable due to their maturity and extensive feature sets.
+
+## References
+
+[1] C. W. Server, “Welcome - Caddy Documentation.” https://caddyserver.com/docs/ 
+
+[2] Documentation Group, “Documentation: Apache HTTP Server - The Apache HTTP Server Project.” https://httpd.apache.org/docs/ 
+
+[3] Nginx, Inc, “nginx documentation.” https://nginx.org/en/docs/ 
+
+[4] Let's Encrypt,“How it works,” Jun. 26, 2024. https://letsencrypt.org/how-it-works/
+
+[5] “Apache vs Nginx: Practical Considerations | DigitalOcean.” https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations
+
+[6] “TechEmpower Framework Benchmarks.” https://www.techempower.com/benchmarks/ 
+
