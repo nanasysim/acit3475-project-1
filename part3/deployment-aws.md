@@ -52,4 +52,7 @@ Since I already have a AWS Route53 domain, I will use that for the domain name s
 
 Test the setup by visiting your domain in a web browser. You should see the application running with HTTPS enabled.
 
+I visited my website ```https://project.play.draingang.site/``` and it welcomes me with the login page:
+![login page](../assets/login.png)
+
 [Previous](../part2/installing-caddy.md) | [Back to Home](../README.md)
