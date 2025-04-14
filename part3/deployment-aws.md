@@ -9,31 +9,43 @@
 6. Add storage and tags as needed, then review and launch the instance.
 7. Download the private key file (.pem) for SSH access.
 
+This is the instance I have made for this part of the project:
+![AWS Instnace](../assets/instance.png)
+
 ## Step 2: Installing Caddy on the Cloud Instance
 1. SSH into your cloud instance using the private key:
    ```bash
    ssh -i your-key.pem ubuntu@<your-instance-public-ip>
-
-[Previous](../part2/installing-caddy.md) | [Back to Home](../README.md)
-
-## Step 3: Domain Name and HTTPS Setup
-1. After purchasing a domain name, log in to your domain registrar's control panel.
-2. Create an A record pointing your domain to the public IP address of your cloud instance.
-3. Install Caddy on your cloud instance if you haven't already:
+    ```
+    Replace `your-key.pem` with the path to your private key file and `<your-instance-public-ip>` with the public IP address of your instance.  
+2. Install Caddy on the cloud instance:
    ```bash
    sudo apt update
    sudo apt install -y caddy
    ```
+3. Verify the installation by running:
+   ```bash  
+    caddy version
+    ```
+    This command should return the version of Caddy installed on your cloud instance.
+    Here is the confirmation of the installed version:
+        ![confirmation of installed](../assets/confirmation.png)
+
+## Step 3: Domain Name and HTTPS Setup
+1. After purchasing a domain name, log in to your domain registrar's control panel.
+2. Create an A record pointing your domain to the public IP address of your cloud instance.
 Since I already have a AWS Route53 domain, I will use that for the domain name setup.
-4. Create a Caddyfile in `/etc/caddy/Caddyfile` with the following content:
+3. Create a Caddyfile in `/etc/caddy/Caddyfile` with the following content:
    ```caddyfile
    your-domain.com {
        reverse_proxy localhost:5000
    }
    ```
    In my case, I will use `play.draingang.site` as the domain name.
+   Below this is how my config file looks like:
+   ![my caddy config file](../assets/caddy-config-file.png)
 
-5. Start Caddy to apply the configuration:
+4. Start Caddy to apply the configuration:
    ```bash
     sudo systemctl start caddy
     sudo systemctl enable caddy
